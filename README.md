@@ -36,7 +36,7 @@ If just the receiver is set, than meteor plots the email as text in console. If 
     {
       "private": {
         "email": {
-          "username": "postmaster@trash-mail.com",
+          "username": "master@trash-mail.com",
           "password": "asldjo19230129njassdlouajjd92j81",
           "server" : "smtp.mailgun.org",
           "port" : "587",
@@ -65,7 +65,7 @@ This will generate a form with the following syntax:
     </form>
 ```
 
-For further custom CSS you can use the normal CSS selectors. As you can see the basic template uses bootstrap classes. If you need a template without bootstrap create a request. Since everyone uses another package of bootstrap I didn't add such a package to simplecontactform. You must add it on your own. Have a look at [nemo64]{https://github.com/Nemo64/meteor-bootstrap} if you don't know which you should use but every other package does the job too. The generated html looks like so:
+For further custom CSS you can use the normal CSS selectors. As you can see the basic template uses bootstrap classes. If you need a template without bootstrap create a request. Since everyone uses another package of bootstrap I didn't add such a package to simplecontactform. You must add it on your own. Have a look at [nemo64](https://github.com/Nemo64/meteor-bootstrap)  if you don't know which you should use but every other package does the job too. The generated html looks like so:
 
 ```HTML
     <form id="contactForm"  novalidate="novalidate">
