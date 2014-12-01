@@ -1,0 +1,40 @@
+<template name="ContactForm">  
+  {{#autoForm schema=Schemas.ContactSchema id="contactForm" type="method" meteormethod="sendEmail" validation="submit" class=formCss }}
+    <fieldset>
+      <div class="form-group">
+        <label class="control-label" for="contact-name">Name</label>
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon"><span class="glyphicon glyphicon-user glyph-color"></span></span>
+          {{> afFieldInput name='contactName' class="form-control" placeholder="Your name"}}
+        </div>        
+        {{#if afFieldIsInvalid name='contactName'}}
+          <span class="help-block">{{afFieldMessage name='contactName'}}</span>
+        {{/if}}                
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="contact-email">Your E-Mail</label>
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon"><span class="glyphicon glyphicon-envelope glyph-color"></span></span>
+          {{> afFieldInput name='contactEmail' class="form-control" placeholder="Your email"}}
+        </div> 
+        {{#if afFieldIsInvalid name='contactEmail'}}
+          <span class="help-block">{{afFieldMessage name='contactEmail'}}</span>
+        {{/if}}                      
+      </div>   
+      <div class="form-group">
+        <label class="control-label" for="contact-message">Your Message</label>
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon"><span class="glyphicon glyphicon-comment glyph-color"></span></span>
+          {{> afFieldInput name='contactMessage' rows="6" class="form-control custom-control" placeholder="Your message"}}
+        </div>  
+        {{#if afFieldIsInvalid name='contactMessage'}}
+          <span class="help-block">{{afFieldMessage name='contactMessage'}}</span>
+        {{/if}}                   
+      </div> 
+      <div>
+        <button type="submit" class="btn btn-block btn-primary btn-lg">Send Message</button>
+      </div>
+    </fieldset>
+  {{/autoForm}}
+</template>
+
