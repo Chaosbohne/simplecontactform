@@ -1,6 +1,8 @@
 Package.describe({
   name: 'chaosbohne:simplecontactform',
-  summary: "A simple contact form for prototyping"
+  summary: "A simple contact form for prototyping",
+  version: "0.1.0",
+  git: "https://github.com/Chaosbohne/simplecontactform"
 });
 
 Package.onUse(function(api) {

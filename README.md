@@ -46,7 +46,7 @@ If just the receiver is set, than meteor plots the email as text in console. If 
 }
 ```
 
-Take care you start the app now as with:
+Take care you start the app now with:
 
     $ meteor --settings settings.json
  
